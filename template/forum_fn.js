@@ -488,14 +488,14 @@ function parseDocument($container) {
 			filterSkip = '.breadcrumbs, [data-skip-responsive]',
 			filterLast = '.edit-icon, .quote-icon, [data-last-responsive]',
 			$linksAll = $this.children(),
-			$linksNotSkip = $linksAll.not(filterSkip), // All items that can potentially be hidden
-			$linksFirst = $linksNotSkip.not(filterLast), // The items that will be hidden first
-			$linksLast = $linksNotSkip.filter(filterLast), // The items that will be hidden last
+			$linksNotSkip = $linksAll.not(filterSkip), // All items that can potentially be dropdown-hidden
+			$linksFirst = $linksNotSkip.not(filterLast), // The items that will be dropdown-hidden first
+			$linksLast = $linksNotSkip.filter(filterLast), // The items that will be dropdown-hidden last
 			persistent = $this.attr('id') === 'nav-main', // Does this list already have a menu (such as quick-links)?
-			html = '<li class="responsive-menu hidden"><a href="javascript:void(0);" class="responsive-menu-link">&nbsp;</a><div class="dropdown hidden"><div class="pointer"><div class="pointer-inner" /></div><ul class="dropdown-contents" /></div></li>',
+			html = '<li class="responsive-menu dropdown-hidden"><a href="javascript:void(0);" class="responsive-menu-link">&nbsp;</a><div class="dropdown dropdown-hidden"><div class="pointer"><div class="pointer-inner" /></div><ul class="dropdown-contents" /></div></li>',
 			slack = 3; // Vertical slack space (in pixels). Determines how sensitive the script is in determining whether a line-break has occured.
 
-		// Add a hidden drop-down menu to each links list (except those that already have one)
+		// Add a dropdown-hidden drop-down menu to each links list (except those that already have one)
 		if (!persistent) {
 			if ($linksNotSkip.is('.rightside')) {
 				$linksNotSkip.filter('.rightside:first').before(html);

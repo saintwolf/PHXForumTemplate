@@ -59,6 +59,7 @@
 
  #phpbb .buttons .button , #phpbb .dropdown-select {
 	margin-right: 5px;
+	width: auto;
 }
 
  #phpbb #jumpbox .dropdown-select {

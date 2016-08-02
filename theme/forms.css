@@ -410,6 +410,7 @@
 
  #phpbb .search-box button {
 	float: left;
+	width: auto;
 }
 
  #phpbb .search-box button.search-icon {
@@ -426,6 +427,7 @@
 	font-size: 0;
 	margin: 0;
 	padding: 2px 5px 2px 3px;
+	width: auto;
 }
 
 /* Search box (header)

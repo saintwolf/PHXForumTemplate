@@ -535,7 +535,7 @@
 	border-radius: 5px;
 	padding: 5px;
 	position: relative;
-	min-width: 40px;
+	min-width: 120px;
 	max-height: 300px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -1109,7 +1109,7 @@
 	display: block;
 }
 
- #phpbb .hidden {
+ #phpbb .dropdown-hidden {
 	display: none;
 }
 
