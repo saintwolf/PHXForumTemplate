@@ -1,0 +1,1205 @@
+
+/* RTL definitions
+---------------------------------------- */
+
+/**
+* common.css
+*/
+
+ #phpbb .rtl h1 {
+	margin-right: 0;
+	margin-left: 200px;
+}
+
+ #phpbb .rtl p.right {
+	text-align: left;
+}
+
+ #phpbb .rtl div.rules ul {
+	margin-left: 0;
+	margin-right: 20px;
+}
+
+/* Main blocks
+---------------------------------------- */
+
+ #phpbb .rtl .logo {
+	float: right;
+	padding: 10px 10px 0 13px;
+}
+
+/* Site Description
+--------------------------------------------- */
+
+ #phpbb .rtl #site-description {
+	float: right;
+}
+
+ #phpbb .rtl #site-description h1 {
+	margin-left: 0;
+}
+
+/* Round cornered boxes and backgrounds
+---------------------------------------- */
+
+ #phpbb .rtl .post {
+	background-position: 0 0;
+}
+
+/* Horizontal lists
+----------------------------------------*/
+
+ #phpbb .rtl ul.linklist > li {
+	float: right;
+	margin-right: 0;
+	margin-left: 7px;
+}
+
+ #phpbb .rtl ul.linklist > li.rightside , #phpbb .rtl p.rightside , #phpbb .rtl a.rightside {
+	float: left;
+	margin-right: 7px;
+	margin-left: 0;
+	text-align: left;
+}
+
+ #phpbb .rtl ul.leftside > li , #phpbb .rtl ul.rightside > li {
+	float: left;
+}
+
+ #phpbb .rtl ul.leftside {
+	float: right;
+	margin-left: 5px;
+	margin-right: 0;
+	text-align: right;
+}
+
+ #phpbb .rtl ul.rightside {
+	float: left;
+	margin-left: -5px;
+	margin-right: 5px;
+	text-align: left;
+}
+
+/* Bulletin icons for list items
+----------------------------------------*/
+
+ #phpbb .rtl ul.linklist.bulletin > li:before {
+	padding-left: 4px;
+	padding-right: 0;
+}
+
+ #phpbb .rtl ul.linklist li.responsive-menu a.responsive-menu-link:before {
+	left: auto;
+	right: 0;
+}
+
+/* Dropdown menu
+---------------------------------------- */
+
+ #phpbb .rtl .dropdown-container.topic-tools {
+	float: right;
+}
+
+ #phpbb .rtl .dropdown li {
+	text-align: right;
+}
+
+ #phpbb .rtl .dropdown-contents > li {
+	padding-left: 15px;
+	padding-right: 0;
+}
+
+ #phpbb .rtl .dropdown-nonscroll > li {
+	padding-left: 0;
+}
+
+ #phpbb .rtl .dropdown li li {
+	padding-left: 0;
+	padding-right: 18px;
+}
+
+ #phpbb .rtl .dropdown-extended .header {
+	text-align: right;
+}
+
+ #phpbb .rtl .dropdown-extended .header .header_settings {
+	float: left;
+}
+
+/* Notifications
+----------------------------------------*/
+
+ #phpbb .rtl .notification_list ul li img {
+	float: right;
+	margin-left: 5px;
+	margin-right: 0;
+}
+
+ #phpbb .rtl .notification_list div.notifications {
+	margin-left: 0;
+	margin-right: 50px;
+}
+
+ #phpbb .rtl .notification_text {
+	margin-left: 0;
+	margin-right: 58px;
+}
+
+ #phpbb .rtl .notification_list p.notification-time {
+	text-align: left;
+}
+
+/* Responsive breadcrumbs
+----------------------------------------*/
+
+ #phpbb .rtl .breadcrumbs .crumb {
+	float: right;
+}
+
+/* Table styles
+----------------------------------------*/
+
+ #phpbb .rtl table.table1 thead th {
+	padding: 0 3px 4px 0;
+}
+
+ #phpbb .rtl table.table1 thead th span {
+	padding-left: 0;
+	padding-right: 7px;
+}
+
+ #phpbb .rtl table.table1 tbody th {
+	text-align: right;
+}
+
+/* Specific column styles */
+
+ #phpbb .rtl table.table1 .name { text-align: right; }
+
+ #phpbb .rtl table.table1 .joined { text-align: right; }
+
+ #phpbb .rtl table.table1 .active { text-align: right; }
+
+ #phpbb .rtl table.table1 .info { text-align: right; }
+
+ #phpbb .rtl table.table1 thead .autocol { padding-left: 0; padding-right: 1em; }
+
+ #phpbb .rtl table.table1 span.rank-img {
+	float: left;
+}
+
+ #phpbb .rtl table.info tbody th {
+	text-align: left;
+}
+
+ #phpbb .rtl .forumbg table.table1 {
+	margin: 0 -1px -1px -2px;
+}
+
+/* Misc layout styles
+---------------------------------------- */
+/* column[1-2] styles are containers for two column layouts */
+
+ #phpbb .rtl .column1 {
+	float: right;
+	clear: right;
+}
+
+ #phpbb .rtl .column2 {
+	float: left;
+	clear: left;
+}
+
+/* General classes for placing floating blocks */
+
+ #phpbb .rtl .left-box {
+	float: right;
+	text-align: right;
+}
+
+ #phpbb .rtl .right-box {
+	float: left;
+	text-align: left;
+}
+
+ #phpbb .rtl dl.details dt {
+	float: right;
+	clear: right;
+	text-align: left;
+}
+
+ #phpbb .rtl dl.details dd {
+	margin-right: 0;
+	margin-left: 0;
+	padding-right: 5px;
+	padding-left: 0;
+	float: right;
+}
+
+ *:first-child + html #phpbb  dl.details dd {
+	margin-right: 30%;
+	float: none;
+}
+
+ * html #phpbb  dl.details dd {
+	margin-right: 30%;
+	float: none;
+}
+
+/* Pagination
+---------------------------------------- */
+
+ #phpbb .rtl .pagination {
+	text-align: left;
+	float: left;
+}
+
+ #phpbb .rtl .pagination > ul {
+	margin-left: 0;
+	margin-right: 5px;
+}
+
+/* Pagination in viewforum for multipage topics */
+
+ #phpbb .rtl .row .pagination {
+	background-position: 100% 50%;
+	float: left;
+	padding-left: 0;
+	padding-right: 15px;
+}
+
+ #phpbb .rtl .row .pagination > ul {
+	margin: 0;
+}
+
+ #phpbb .rtl .pagination span {
+	direction: ltr;
+}
+
+ #phpbb .pagination li.page-jump {
+	margin-left: 5px;
+	margin-right: 0;
+}
+
+ #phpbb .pagination li.previous a { background-position: -50px 2px; }
+
+ #phpbb .pagination li.next a { background-position: -30px 2px; }
+
+ #phpbb .pagination li.previous a:hover { background-position: -50px -18px; }
+
+ #phpbb .pagination li.next a:hover { background-position: -30px -18px; }
+
+/* Miscellaneous styles
+---------------------------------------- */
+
+ #phpbb .rtl #forum-permissions {
+	float: left;
+	padding-right: 5px;
+	padding-left: 0;
+	margin-right: 5px;
+	margin-left: 0;
+	text-align: left;
+}
+
+ #phpbb .rtl #quick-links {
+	margin-left: 7px;
+	margin-right: 0;
+}
+
+ #phpbb .rtl .header-avatar span:after {
+	float: left;
+	padding-left: 0;
+	padding-right: 2px;
+}
+
+ #phpbb .rtl .member-search {
+	float: right;
+}
+
+/**
+* links.css
+*/
+
+/* Back to top of page */
+
+ #phpbb .rtl .back2top {
+	text-align: left;
+}
+
+/* Links adjustment to correctly display an order of rtl/ltr mixed content */
+
+ #phpbb .rtl a {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+ #phpbb li.breadcrumbs span:first-child > a {
+	padding-left: 0;
+	padding-right: 19px;
+}
+
+/* Notification mark read link */
+
+ #phpbb .rtl .dropdown-extended a.mark_read {
+	border-radius: 0 3px 3px 0;
+	left: 0;
+	right: auto;
+}
+
+ #phpbb .rtl a.top {
+	float: left;
+}
+
+ #phpbb .rtl a.top2 {
+	background-position: 100% 50%;
+	padding-left: 0;
+	padding-right: 15px;
+}
+
+ #phpbb .rtl .skiplink {
+	/* invisible skip link, used for accessibility  */
+	left: 0;
+	right: -999px;
+}
+
+ #phpbb .rtl a.feed-icon-forum {
+	float: left;
+}
+
+/**
+* content.css
+*/
+
+ #phpbb .rtl ul.topiclist dt , #phpbb .rtl li.header dt {
+	float: right;
+	margin-right: 0;
+	margin-left: -440px;
+}
+
+ #phpbb .rtl ul.topiclist.missing-column dt {
+	margin-right: 0;
+	margin-left: -345px;
+}
+
+ #phpbb .rtl ul.topiclist.two-long-columns dt {
+	margin-right: 0;
+	margin-left: -250px;
+}
+
+ #phpbb .rtl ul.topiclist.two-columns dt {
+	margin-right: 0;
+	margin-left: -80px;
+}
+
+ #phpbb .rtl ul.topiclist dt .list-inner {
+	margin-right: 0;
+	margin-left: 440px;
+}
+
+ #phpbb .rtl ul.topiclist.missing-column dt .list-inner {
+	margin-right: 0;
+	margin-left: 330px;
+}
+
+ #phpbb .rtl ul.topiclist.two-long-columns dt .list-inner {
+	margin-right: 0;
+	margin-left: 250px;
+}
+
+ #phpbb .rtl ul.topiclist.two-columns dt .list-inner {
+	margin-right: 0;
+	margin-left: 80px;
+}
+
+ #phpbb .rtl ul.topiclist dd {
+	float: right;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-left: none;
+}
+
+ #phpbb .rtl ul.topiclist dfn {
+	left: auto;
+	right: -999px;
+}
+
+ #phpbb .rtl ul.topiclist li.row dt a.subforum {
+	padding-right: 12px;
+	background-position: right;
+	position: static;
+}
+
+ #phpbb .rtl .forum-image {
+	float: right;
+	margin-right: 0;
+	margin-left: 5px;
+}
+
+ #phpbb .rtl li.header dt , #phpbb .rtl li.header dd {
+	border-right-width: 0;
+}
+
+ #phpbb .rtl li.header dd {
+	padding-left: 0;
+	padding-right: 1px;
+}
+
+ #phpbb .rtl dl.icon {
+	background-position: 99.5% 50%;
+}
+
+ #phpbb .rtl li.header dl.icon dt .list-inner {
+	/* Tweak for headers alignment when folder icon used */
+	padding-right: 0;
+	padding-left: 50px;
+}
+
+ #phpbb .rtl dl.icon dt {
+	background-position: 99.5% 95%;			/* Position of topic icon */
+}
+
+ #phpbb .rtl dl.icon dt .list-inner {
+	padding-left: 5px;
+	padding-right: 45px;					/* Space for folder icon */
+}
+
+ #phpbb .rtl dl a.icon-link {						/* topic row icon links */
+	display: inline-block;
+	left: auto;
+	right: 0;
+	margin-left: 0;
+	margin-right: 2px;
+}
+
+ #phpbb .rtl dd.lastpost > span , #phpbb .rtl ul.topiclist dd.info > span , #phpbb .rtl ul.topiclist dd.time > span , #phpbb .rtl dd.redirect > span , #phpbb .rtl dd.moderation > span {
+	padding-left: 0;
+	padding-right: 5px;
+}
+
+/* Post body styles
+----------------------------------------*/
+
+ #phpbb .rtl .postbody , #phpbb .rtl .postbody h3 {
+	float: right;
+}
+
+ #phpbb .rtl .has-profile .postbody h3 {
+	margin-right: 0;
+	margin-left: 180px;
+}
+
+ #phpbb .rtl p.post-notice {
+	padding-left: 5px;
+	padding-right: 26px;
+}
+
+ #phpbb .rtl p.post-notice:before {
+	left: auto;
+	right: 0;
+}
+
+/* Topic review panel
+----------------------------------------*/
+
+ #phpbb .rtl #topicreview {
+	padding-right: 0;
+	padding-left: 5px;
+}
+
+/* Content container styles
+----------------------------------------*/
+
+ #phpbb .rtl .content ul , #phpbb .rtl .content ol {
+	margin-right: 3em;
+	margin-left: 0;
+}
+
+ #phpbb .rtl .signature {
+	clear: right;
+}
+
+ #phpbb .rtl .notice {
+	clear: right;
+}
+
+/* Jump to post link for now */
+
+ #phpbb .rtl ul.searchresults {
+	text-align: left;
+}
+
+/* BB Code styles
+----------------------------------------*/
+/* Quote block */
+
+ #phpbb .rtl blockquote {
+	margin: 0.5em 25px 0 1px;
+	background-position: 99% 8px;
+}
+
+ #phpbb .rtl blockquote blockquote {
+	/* Nested quotes */
+	margin: 0.5em 15px 0 1px;
+}
+
+ #phpbb .rtl blockquote cite {
+	/* Username/source of quoter */
+	margin-right: 20px;
+	margin-left: 0;
+}
+
+ #phpbb .rtl blockquote .codebox {
+	margin-right: 0;
+}
+
+ #phpbb .rtl code {
+	direction: ltr;
+}
+
+/* Attachments
+----------------------------------------*/
+
+ #phpbb .rtl .attachbox {
+	float: right;
+	margin: 5px 0 5px 5px;
+	clear: right;
+}
+
+ #phpbb .rtl .attachbox dd {
+	clear: right;
+}
+
+ #phpbb .rtl .attachbox p {
+	clear: right;
+}
+
+ #phpbb .rtl .attachbox p.stats {
+	clear: right;
+}
+
+/* Post poll styles
+----------------------------------------*/
+
+ #phpbb .rtl fieldset.polls dt {
+	text-align: right;
+	float: right;
+	border-left: none;
+}
+
+ #phpbb .rtl fieldset.polls dd {
+	float: right;
+	border-right: none;
+	margin-right: 0;
+}
+
+ #phpbb .rtl fieldset.polls dd div {
+	text-align: left;
+}
+
+ #phpbb .rtl .pollbar1 , #phpbb .rtl .pollbar2 , #phpbb .rtl .pollbar3 , #phpbb .rtl .pollbar4 , #phpbb .rtl .pollbar5 {
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-right: none;
+}
+
+/* Poster profile block
+----------------------------------------*/
+
+ #phpbb .rtl .postprofile {
+	border-width: 0 1px 0 0;
+	float: left;
+/*	text-align: right; */
+}
+
+ #phpbb .rtl .pm .postprofile {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-left: none;
+}
+
+ #phpbb .rtl .postprofile dd , #phpbb .rtl .postprofile dt {
+	margin-left: 0;
+	margin-right: 8px;
+}
+
+ #phpbb .rtl .postprofile .avatar {
+	float: right;
+}
+
+ #phpbb .rtl .online {
+	background-position: 0 0;
+}
+
+ #phpbb .rtl dl.pmlist dd {
+	margin-right: 61% !important;
+	margin-left: 0 !important;
+}
+
+/**
+* buttons.css
+*/
+
+ #phpbb .rtl .dropdown-select {
+	padding-left: 24px;
+	padding-right: 8px;
+}
+
+ #phpbb .rtl .icon-button:before {
+	float: left;
+	margin-left: 0;
+	margin-right: 2px;
+}
+
+ #phpbb .rtl .dropdown-select.icon-button:before {
+	margin-left: 4px;
+	margin-right: 0;
+}
+
+ #phpbb .rtl .dropdown-select:after {
+	border-left: 0;
+	border-right-style: solid;
+	border-right-width: 1px;
+	left: 0;
+	right: auto;
+}
+
+ #phpbb .rtl .buttons , #phpbb .rtl .buttons .button {
+	float: right;
+}
+
+ #phpbb .rtl .buttons .button , #phpbb .rtl .dropdown-select {
+	margin-left: 5px;
+	margin-right: 0;
+}
+
+/* Icon images
+---------------------------------------- */
+
+ #phpbb .rtl .small-icon {
+	background-position: 100% 50%;
+}
+
+ #phpbb .rtl .small-icon > a {
+	padding-left: 0;
+	padding-right: 19px;
+}
+
+/* Post control buttons
+--------------------------------------------- */
+
+ #phpbb .rtl .post-buttons {
+	float: left;
+}
+
+ #phpbb .rtl .has-profile .post-buttons {
+	left: 0;
+	right: auto;
+}
+
+ #phpbb .rtl .post-buttons li {
+	float: right;
+}
+
+ #phpbb .post-buttons .icon-button:before {
+	margin-right: 0;
+}
+
+/* Poster contact icons
+ ----------------------------------------*/
+
+ #phpbb .rtl .contact-icons a {
+	border-left-width: 1px;
+	border-left-style: dotted;
+	border-right: none;
+	float: right;
+}
+
+ #phpbb .rtl .contact-icons .last-cell {
+	border-left: none;
+}
+
+/**
+* cp.css
+*/
+/* Control Panel Styles
+---------------------------------------- */
+
+
+/* Main CP box
+----------------------------------------*/
+
+ #phpbb .rtl #cp-menu {
+	float: right;
+}
+
+ #phpbb .rtl #cp-main {
+	float: right;
+}
+
+ #phpbb .rtl #cp-main .panel ol {
+	margin-right: 2em;
+	margin-left: 0;
+}
+
+ #phpbb .rtl #cp-main .buttons {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+ #phpbb .tabs-container h2 {
+	float: right;
+}
+
+/* CP tabbed menu
+----------------------------------------*/
+
+ #phpbb .rtl #tabs {
+	margin-left: 0;
+	margin-right: 7px;
+}
+
+ #phpbb .rtl #tabs .tab {
+	float: right;
+}
+
+ #phpbb .rtl #tabs .tab > a {
+	margin-left: 1px;
+	margin-right: 0;
+}
+
+/* Mini tabbed menu used in MCP
+----------------------------------------*/
+
+ #phpbb .rtl #minitabs {
+	float: left;
+	margin-right: 0;
+	margin-left: 7px;
+}
+
+ #phpbb .rtl #minitabs .tab {
+	float: left;
+}
+
+ #phpbb .rtl #minitabs .tab > a {
+	margin-right: 2px;
+	margin-left: 0;
+}
+
+/* Responsive tabs
+----------------------------------------*/
+
+ #phpbb .rtl #tabs .dropdown {
+	margin-left: -2px;
+}
+
+ #phpbb .rtl #tabs .dropdown li {
+	text-align: left;
+}
+
+ #phpbb .rtl #minitabs .dropdown {
+	margin-left: -4px;
+}
+
+ #phpbb .rtl #minitabs .dropdown li {
+	text-align: right;
+}
+
+/* Responsive *CP navigation
+----------------------------------------*/
+
+ #phpbb @media only screen and(max-width:900px) , #phpbb only screen and(max-device-width:900px) {
+	.rtl #cp-menu, .rtl #navigation, .rtl #cp-main {
+		float: none;
+	}
+
+/* UCP navigation menu
+----------------------------------------*/
+
+/* Preferences pane layout
+----------------------------------------*/
+
+ #phpbb }.rtl #cp-main h2 {
+	margin-left: 0;
+	margin-right: 10px;
+}
+
+/* Friends list */
+
+ #phpbb .rtl .cp-mini {
+	margin: 10px 5px 10px 15px;
+}
+
+/* PM Styles
+----------------------------------------*/
+
+/* PM panel adjustments */
+
+ #phpbb .rtl .reply-all a.right {
+	background-position: 5% 60%;
+}
+
+ #phpbb .rtl .reply-all a.right:hover {
+	background-position: 3% 60%;
+}
+
+ #phpbb .rtl .reply-all {
+	padding-left: 5px;
+}
+
+/* Defined rules list for PM options */
+
+ #phpbb .rtl ol.def-rules {
+	padding-right: 0;
+}
+
+/* PM marking colours */
+
+ #phpbb .rtl .pm-legend {
+	border-right-width: 10px;
+	border-right-style: solid;
+	border-left-width: 0;
+	padding-left: 0;
+	padding-right: 3px;
+}
+
+/* Avatar gallery */
+
+ #phpbb .rtl #gallery label {
+	float: right;
+}
+
+/* Responsive *CP navigation
+----------------------------------------*/
+
+ #phpbb @media only screen and(max-width:900px) , #phpbb only screen and(max-device-width:900px) {
+	.rtl #cp-menu, .rtl #navigation, .rtl #cp-main {
+		float: none;
+	}
+
+/**
+* forms.css
+*/
+
+/* General form styles
+----------------------------------------*/
+
+
+ #phpbb }.rtl option {
+	padding-right: 0;
+	padding-left: 1em;
+}
+
+ #phpbb .rtl label {
+	padding-right: 0;
+	padding-left: 5px;
+}
+
+/* Definition list layout for forms
+---------------------------------------- */
+
+ #phpbb .rtl fieldset dt {
+	float: right;
+	text-align: right;
+}
+
+ #phpbb .rtl fieldset dd {
+	margin-left: 0;
+	margin-right: 41%;
+}
+
+/* Specific layout 1 */
+
+ #phpbb .rtl fieldset.fields1 dt {
+	border-left-width: 0;
+	border-right-width: 1px;
+}
+
+ #phpbb .rtl fieldset.fields1 dd {
+	margin-right: 15em;
+	margin-left: 0;
+	border-right-width: 0;
+	border-left-width: 1px;
+}
+
+/* Specific layout 2 */
+
+ #phpbb .rtl fieldset.fields2 dt {
+	border-right-width: 1px;
+	border-left-width: 0;
+}
+
+ #phpbb .rtl fieldset.fields2 dd {
+	margin-right: 16em;
+	margin-left: 0;
+	border-left-width: 1px;
+	border-right-width: 0;
+}
+
+/* Form elements */
+
+ #phpbb .rtl dt label {
+	text-align: right;
+}
+
+ #phpbb .rtl dd input , #phpbb .rtl dd textarea {
+	margin-left: 3px;
+	margin-right: 0;
+}
+
+/* Quick-login on index page */
+
+ #phpbb .rtl fieldset.quick-login input.inputbox {
+	margin-left: 5px;
+	margin-right: 0;
+}
+
+ #phpbb .rtl fieldset.quick-login label {
+	padding-left: 2px;
+	padding-right: 0;
+}
+
+/* Display options on viewtopic/viewforum pages  */
+
+ #phpbb .rtl fieldset.display-options label {
+	padding-left: 2px;
+	padding-right: 0;
+}
+
+/* Display actions for ucp and mcp pages */
+
+ #phpbb .rtl fieldset.display-actions {
+	text-align: left;
+	padding-left: 1em;
+	padding-right: 0;
+}
+
+ #phpbb .rtl fieldset.display-actions label {
+	padding-left: 2px;
+	padding-right: 0;
+}
+
+/* MCP forum selection*/
+
+ #phpbb .rtl fieldset.forum-selection {
+	float: left;
+}
+
+ #phpbb .rtl fieldset.forum-selection2 {
+	float: left;
+}
+
+/* Posting page styles
+----------------------------------------*/
+
+/* Emoticons panel */
+
+ #phpbb .rtl #smiley-box {
+	float: left;
+}
+
+/* Search box
+---------------------------------------- */
+
+/* Topic and forum Search */
+
+ #phpbb .rtl .search-box {
+	float: right;
+}
+
+ #phpbb .rtl .search-box .inputbox {
+	border-left-width: 0;
+	border-right-width: 1px;
+	border-radius: 0 4px 4px 0;
+	float: right;
+	padding: 3px;
+}
+
+ #phpbb .rtl .search-box .button {
+	float: right;
+}
+
+ #phpbb .rtl .search-box a.button {
+	border-left-width: 1px;
+	border-right-width: 0;
+	border-radius: 4px 0 0 4px;
+	padding-left: 5px;
+	padding-right: 3px;
+}
+
+ #phpbb .rtl .search-header {
+	float: left;
+	margin-right: 0;
+	margin-left: 5px;
+}
+
+ #phpbb .rtl input.search {
+	background-position: right 1px;
+	padding-right: 17px;
+	padding-left: 0;
+}
+
+/* Form button styles
+---------------------------------------- */
+
+/** Reference: Bug #27155 */
+
+ #phpbb .rtl #wrap , #phpbb .rtl .headerbar , #phpbb .rtl #site-description , #phpbb .rtl .navbar {
+	position: relative;
+}
+
+/* Former imageset */
+
+ #phpbb .rtl .imageset.forum_link , #phpbb .rtl .imageset.forum_read , #phpbb .rtl .imageset.forum_read_locked , #phpbb .rtl .imageset.forum_read_subforum , #phpbb .rtl .imageset.forum_unread , #phpbb .rtl .imageset.forum_unread_locked , #phpbb .rtl .imageset.forum_unread_subforum , #phpbb .rtl .imageset.topic_moved , #phpbb .rtl .imageset.topic_read , #phpbb .rtl .imageset.topic_read_mine , #phpbb .rtl .imageset.topic_read_hot , #phpbb .rtl .imageset.topic_read_hot_mine , #phpbb .rtl .imageset.topic_read_locked , #phpbb .rtl .imageset.topic_read_locked_mine , #phpbb .rtl .imageset.topic_unread , #phpbb .rtl .imageset.topic_unread_mine , #phpbb .rtl .imageset.topic_unread_hot , #phpbb .rtl .imageset.topic_unread_hot_mine , #phpbb .rtl .imageset.topic_unread_locked , #phpbb .rtl .imageset.topic_unread_locked_mine , #phpbb .rtl .imageset.sticky_read , #phpbb .rtl .imageset.sticky_read_mine , #phpbb .rtl .imageset.sticky_read_locked , #phpbb .rtl .imageset.sticky_read_locked_mine , #phpbb .rtl .imageset.sticky_unread , #phpbb .rtl .imageset.sticky_unread_mine , #phpbb .rtl .imageset.sticky_unread_locked , #phpbb .rtl .imageset.sticky_unread_locked_mine , #phpbb .rtl .imageset.announce_read , #phpbb .rtl .imageset.announce_read_mine , #phpbb .rtl .imageset.announce_read_locked , #phpbb .rtl .imageset.announce_read_locked_mine , #phpbb .rtl .imageset.announce_unread , #phpbb .rtl .imageset.announce_unread_mine , #phpbb .rtl .imageset.announce_unread_locked , #phpbb .rtl .imageset.announce_unread_locked_mine , #phpbb .rtl .imageset.global_read , #phpbb .rtl .imageset.global_read_mine , #phpbb .rtl .imageset.global_read_locked , #phpbb .rtl .imageset.global_read_locked_mine , #phpbb .rtl .imageset.global_unread , #phpbb .rtl .imageset.global_unread_mine , #phpbb .rtl .imageset.global_unread_locked , #phpbb .rtl .imageset.global_unread_locked_mine , #phpbb .rtl .imageset.pm_read , #phpbb .rtl .imageset.pm_unread {
+	padding-right: 27px;
+	padding-left: 0;
+}
+
+ #phpbb .rtl .imageset.subforum_read , #phpbb .rtl .imageset.subforum_unread , #phpbb .rtl .imageset.icon_post_target , #phpbb .rtl .imageset.icon_post_target_unread , #phpbb .rtl .imageset.icon_topic_latest , #phpbb .rtl .imageset.icon_topic_newest {
+	padding-right: 11px;
+	padding-left: 0;
+}
+
+ #phpbb .rtl .imageset.icon_back_top {
+	padding-right: 11px;
+	padding-left: 0;
+}
+
+ #phpbb .rtl .imageset.icon_contact_aim , #phpbb .rtl .imageset.phpbb_aol-icon , #phpbb .rtl .imageset.icon_contact_email , #phpbb .rtl .imageset.icon_contact_icq , #phpbb .rtl .imageset.phpbb_icq-icon , #phpbb .rtl .imageset.icon_contact_jabber , #phpbb .rtl .imageset.icon_contact_msnm , #phpbb .rtl .imageset.phpbb_wlm-icon , #phpbb .rtl .imageset.icon_contact_www , #phpbb .rtl .imageset.phpbb_website-icon , #phpbb .rtl .imageset.icon_contact_yahoo , #phpbb .rtl .imageset.phpbb_yahoo-icon , #phpbb .rtl .imageset.icon_post_delete , #phpbb .rtl .imageset.icon_post_info , #phpbb .rtl .imageset.icon_post_report , #phpbb .rtl .imageset.icon_user_warn {
+	padding-right: 20px;
+	padding-left: 0;
+}
+
+ #phpbb .rtl .imageset.icon_topic_attach {
+	padding-right: 7px;
+	padding-left: 0;
+}
+
+ #phpbb .rtl .imageset.icon_topic_reported , #phpbb .rtl .imageset.icon_topic_unapproved {
+	padding-right: 16px;
+	padding-left: 0;
+}
+
+/**
+* plupload.css
+*/
+
+
+ #phpbb .rtl .attach-controls {
+	float: left;
+}
+
+/**
+* responsive.css
+*/
+
+ #phpbb @media only screen and(max-width:700px) , #phpbb only screen and(max-device-width:700px) {
+	/* .topiclist lists
+	----------------------------------------*/
+	.rtl ul.topiclist li.header dt, .rtl ul.topiclist li.header dt .list-inner {
+		margin-left: 0 !important;
+		padding-left: 0;
+	}
+
+ #phpbb .rtl ul.topiclist dt , #phpbb .rtl ul.topiclist dt .list-inner , #phpbb .rtl ul.topiclist.missing-column dt , #phpbb .rtl ul.topiclist.missing-column dt .list-inner , #phpbb .rtl ul.topiclist.two-long-columns dt , #phpbb .rtl ul.topiclist.two-long-columns dt .list-inner , #phpbb .rtl ul.topiclist.two-columns dt , #phpbb .rtl ul.topiclist.two-columns dt .list-inner {
+		margin-left: 0;
+	}
+
+ #phpbb .rtl ul.topiclist dt .list-inner.with-mark {
+		padding-left: 34px;
+	}
+
+/* Forums and topics lists
+	----------------------------------------*/
+	
+ #phpbb .rtl ul.topiclist.forums dt {
+		margin-left: -250px;
+	}
+
+ #phpbb .rtl ul.topiclist.forums dt .list-inner {
+		margin-left: 250px;
+	}
+
+ #phpbb .rtl ul.topiclist dd.mark {
+		left: 5px;
+		right: auto;
+		text-align: right;
+	}
+
+ #phpbb .rtl table.responsive.show-header thead , #phpbb .rtl table.responsive.show-header th:first-child {
+		text-align: right !important;
+	}
+
+ #phpbb .rtl table.responsive td {
+		text-align: right !important;
+	}
+
+/* User profile
+	----------------------------------------*/
+	
+ #phpbb .rtl .column1 , #phpbb .rtl .column2 , #phpbb .rtl .left-box.profile-details {
+		float: none;
+	}
+
+/* Post
+	----------------------------------------*/
+	
+ #phpbb .rtl .postprofile , #phpbb .rtl .postbody , #phpbb .rtl .search .postbody {
+		float: none;
+	}
+
+ #phpbb .rtl .post .postprofile {
+		border-width: 0 0 1px 0;
+	}
+
+ #phpbb .rtl .postprofile dt , #phpbb .rtl .postprofile dd.profile-rank , #phpbb .rtl .search .postprofile dd {
+		margin: 0;
+	}
+
+ #phpbb .rtl .postprofile .avatar {
+		margin-left: 5px;
+		margin-right: 0;
+	}
+
+ #phpbb .rtl .has-profile .post-buttons {
+		left: 20px;
+	}
+
+/* Forms
+	----------------------------------------*/
+	
+ #phpbb .rtl fieldset dt , #phpbb .rtl fieldset.fields1 dt , #phpbb .rtl fieldset.fields2 dt {
+		float: none;
+	}
+
+ #phpbb .rtl fieldset dd , #phpbb .rtl fieldset.fields1 dd , #phpbb .rtl fieldset.fields2 dd {
+		margin-right: 20px;
+	}
+
+ #phpbb }@media only screen and(max-width:550px) , #phpbb only screen and(max-device-width:550px) {
+	/* .topiclist lists
+	----------------------------------------*/
+	.rtl ul.topiclist.forums dt {
+		margin-left: 0;
+	}
+
+ #phpbb .rtl ul.topiclist.forums dt .list-inner {
+		margin-left: 0;
+	}
+
+ #phpbb }@media only screen and(max-width:500px) , #phpbb only screen and(max-device-width:500px) {
+	.rtl dl.details dt, .rtl dl.details dd {
+		float: none;
+		text-align: right;
+	}
+
+ #phpbb .rtl dl.details dd {
+		margin-left: 0;
+		margin-right: 20px;
+	}
+
+ #phpbb .captcha-panel dd.captcha {
+		margin-right: 0;
+	}
+
+
+}

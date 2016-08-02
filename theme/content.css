@@ -1,0 +1,871 @@
+
+/* Content Styles
+---------------------------------------- */
+
+
+ #phpbb ul.topiclist {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+}
+
+ #phpbb ul.forums {
+	background: transparent none repeat-x 0 0;
+}
+
+ #phpbb ul.topiclist li {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+}
+
+ #phpbb ul.topiclist dl {
+	position: relative;
+}
+
+ #phpbb ul.topiclist li.row dl {
+	padding: 2px 0;
+}
+
+ #phpbb ul.topiclist dt , #phpbb ul.topiclist dd {
+	display: block;
+	float: left;
+}
+
+ #phpbb ul.topiclist dt {
+	width: 100%;
+	margin-right: -440px;
+	font-size: 1.1em;
+}
+
+ #phpbb ul.topiclist.missing-column dt {
+	margin-right: -345px;
+}
+
+ #phpbb ul.topiclist.two-long-columns dt {
+	margin-right: -250px;
+}
+
+ #phpbb ul.topiclist.two-columns dt {
+	margin-right: -80px;
+}
+
+ #phpbb ul.topiclist dt .list-inner {
+	margin-right: 440px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+ #phpbb ul.topiclist.missing-column dt .list-inner {
+	margin-right: 345px;
+}
+
+ #phpbb ul.topiclist.two-long-columns dt .list-inner {
+	margin-right: 250px;
+}
+
+ #phpbb ul.topiclist.two-columns dt .list-inner {
+	margin-right: 80px;
+}
+
+ #phpbb ul.topiclist dd {
+	border-left: 1px solid transparent;
+	padding: 4px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ #phpbb ul.topiclist dfn {
+	/* Labels for post/view counts */
+	position: absolute;
+	left: -999px;
+	width: 990px;
+}
+
+ #phpbb ul.topiclist li.row dt a.subforum {
+	background-image: none;
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	position: relative;
+	white-space: nowrap;
+	padding: 0 0 0 12px;
+}
+
+ #phpbb .forum-image {
+	float: left;
+	padding-top: 5px;
+	margin-right: 5px;
+}
+
+ #phpbb li.row {
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+}
+
+ #phpbb li.row strong {
+	font-weight: normal;
+}
+
+ #phpbb li.header dt , #phpbb li.header dd {
+	line-height: 1em;
+	border-left-width: 0;
+	margin: 2px 0 4px 0;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-size: 1em;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+
+ #phpbb li.header dt {
+	font-weight: bold;
+	width: 100%;
+	margin-right: -440px;
+}
+
+ #phpbb li.header dt .list-inner {
+	margin-right: 440px;
+}
+
+ #phpbb li.header dd {
+	padding-left: 1px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ #phpbb li.header dl.icon dt , #phpbb li.header dl.icon dd {
+	min-height: 0;
+}
+
+ #phpbb li.header dl.icon dt .list-inner {
+	/* Tweak for headers alignment when folder icon used */
+	padding-left: 0;
+	padding-right: 50px;
+}
+
+/* Forum list column styles */
+
+ #phpbb dl.icon {
+	background-position: 10px 50%;		/* Position of folder icon */
+	background-repeat: no-repeat;
+}
+
+ #phpbb dl.icon dt {
+	background-repeat: no-repeat;
+	background-position: 5px 95%;		/* Position of topic icon */
+}
+
+ #phpbb dl.icon dt .list-inner {
+	padding-left: 45px;					/* Space for folder icon */
+}
+
+ #phpbb dl.icon dt , #phpbb dl.icon dd {
+	min-height: 35px;
+}
+
+ #phpbb dl a.icon-link {						/* topic row icon links */
+	display: block;
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -15px;
+	margin-left: 9px;
+}
+
+ #phpbb dd.posts , #phpbb dd.topics , #phpbb dd.views , #phpbb dd.extra , #phpbb dd.mark {
+	width: 80px;
+	text-align: center;
+	line-height: 2.2em;
+	font-size: 1.2em;
+}
+
+ #phpbb dd.posts , #phpbb dd.topics , #phpbb dd.views {
+	width: 95px;
+}
+
+/* List in forum description */
+
+ #phpbb dl.icon dt ol , #phpbb dl.icon dt ul {
+	list-style-position: inside;
+	margin-left: 1em;
+}
+
+ #phpbb dl.icon dt li {
+	display: list-item;
+	list-style-type: inherit;
+}
+
+ #phpbb dd.lastpost , #phpbb dd.redirect , #phpbb dd.moderation , #phpbb dd.time , #phpbb dd.info {
+	width: 250px;
+	font-size: 1.1em;
+}
+
+ #phpbb dd.redirect {
+	line-height: 2.5em;
+}
+
+ #phpbb dd.time {
+	line-height: 200%;
+}
+
+ #phpbb dd.lastpost > span , #phpbb ul.topiclist dd.info > span , #phpbb ul.topiclist dd.time > span , #phpbb dd.redirect > span , #phpbb dd.moderation > span {
+	display: block;
+	padding-left: 5px;
+}
+
+ #phpbb dd.extra , #phpbb dd.mark {
+	line-height: 200%;
+}
+
+ #phpbb dd.option {
+	width: 125px;
+	line-height: 200%;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+/* Post body styles
+----------------------------------------*/
+
+ #phpbb .postbody {
+	padding: 0;
+	line-height: 1.48em;
+	width: 76%;
+	float: left;
+	position: relative;
+}
+
+ #phpbb .postbody .ignore {
+	font-size: 1.1em;
+}
+
+ #phpbb .postbody h3.first {
+	/* The first post on the page uses this */
+	font-size: 1.7em;
+}
+
+ #phpbb .postbody h3 {
+	/* Postbody requires a different h3 format - so change it here */
+	float: left;
+	font-size: 1.5em;
+	padding: 2px 0 0 0;
+	margin-top: 0 !important;
+	margin-bottom: 0.3em !important;
+	text-transform: none;
+	border: none;
+	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	line-height: 125%;
+}
+
+ #phpbb .postbody h3 img {
+	vertical-align: bottom;
+}
+
+ #phpbb .has-profile .postbody h3 {
+	/* If there is a post-profile, we position the post-buttons differently */
+	float: none !important;
+	margin-right: 180px;
+}
+
+ #phpbb .postbody .content {
+	font-size: 1.3em;
+	overflow-x: auto;
+}
+
+ #phpbb .postbody img.postimage {
+	max-width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ #phpbb .search .postbody {
+	width: 68%
+}
+
+/* Topic review panel
+----------------------------------------*/
+
+ #phpbb #review {
+	margin-top: 2em;
+}
+
+ #phpbb #topicreview {
+	padding-right: 5px;
+	overflow: auto;
+	height: 300px;
+}
+
+ #phpbb #topicreview .postbody {
+	width: auto;
+	float: none;
+	margin: 0;
+	height: auto;
+}
+
+ #phpbb #topicreview .post {
+	height: auto;
+}
+
+ #phpbb #topicreview h2 {
+	border-bottom-width: 0;
+}
+
+ #phpbb .post-ignore .postbody {
+	display: none;
+}
+
+/* MCP Post details
+----------------------------------------*/
+
+ #phpbb #post_details {
+	/* This will only work in IE7+, plus the others */
+	overflow: auto;
+	max-height: 300px;
+}
+
+/* Content container styles
+----------------------------------------*/
+
+ #phpbb .content {
+	clear: both;
+	min-height: 3em;
+	overflow: hidden;
+	line-height: 1.4em;
+	font-family: "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	padding-bottom: 1px;
+}
+
+ #phpbb .content h2 , #phpbb .panel h2 {
+	font-weight: normal;
+	border-bottom: 1px solid transparent;
+	font-size: 1.6em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+ #phpbb .panel h3 {
+	margin: 0.5em 0;
+}
+
+ #phpbb .panel p {
+	font-size: 1.2em;
+	margin-bottom: 1em;
+	line-height: 1.4em;
+}
+
+ #phpbb .content p {
+	font-family: "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	margin-bottom: 1em;
+	line-height: 1.4em;
+}
+
+ #phpbb dl.faq {
+	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+	font-size: 1.1em;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	line-height: 1.4em;
+}
+
+ #phpbb dl.faq dt {
+	font-weight: bold;
+}
+
+ #phpbb .content dl.faq {
+	font-size: 1.2em;
+	margin-bottom: 0.5em;
+}
+
+ #phpbb .content li {
+	list-style-type: inherit;
+}
+
+ #phpbb .content ul , #phpbb .content ol {
+	margin-bottom: 1em;
+	margin-left: 3em;
+}
+
+ #phpbb .posthilit {
+	padding: 0 2px 1px 2px;
+}
+
+/* Post author */
+
+ #phpbb p.author {
+	margin-bottom: 0.6em;
+	padding: 0 0 5px 0;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.2em;
+	clear: both;
+}
+
+/* Post signature */
+
+ #phpbb .signature {
+	margin-top: 1.5em;
+	padding-top: 0.2em;
+	font-size: 1.1em;
+	border-top: 1px solid transparent;
+	clear: left;
+	line-height: 140%;
+	overflow: hidden;
+	width: 100%;
+}
+
+ #phpbb .signature.standalone {
+	border-top-width: 0;
+	margin-top: 0;
+}
+
+ #phpbb dd .signature {
+	margin: 0;
+	padding: 0;
+	clear: none;
+	border: none;
+}
+
+ #phpbb .signature li {
+	list-style-type: inherit;
+}
+
+ #phpbb .signature ul , #phpbb .signature ol {
+	margin-bottom: 1em;
+	margin-left: 3em;
+}
+
+/* Post noticies */
+
+ #phpbb .notice {
+	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+	width: auto;
+	margin-top: 1.5em;
+	padding-top: 0.2em;
+	font-size: 1em;
+	border-top: 1px dashed transparent;
+	clear: left;
+	line-height: 130%;
+}
+
+/* Jump to post link for now */
+
+ #phpbb ul.searchresults {
+	list-style: none;
+	text-align: right;
+	clear: both;
+}
+
+/* BB Code styles
+----------------------------------------*/
+/* Quote block */
+
+ #phpbb blockquote {
+	background: transparent none 6px 8px no-repeat;
+	border: 1px solid transparent;
+	font-size: 0.95em;
+	margin: 0.5em 1px 0 25px;
+	overflow: hidden;
+	padding: 5px;
+}
+
+ #phpbb blockquote blockquote {
+	/* Nested quotes */
+	font-size: 1em;
+	margin: 0.5em 1px 0 15px;
+}
+
+ #phpbb blockquote cite {
+	/* Username/source of quoter */
+	font-style: normal;
+	font-weight: bold;
+	margin-left: 20px;
+	display: block;
+	font-size: 0.9em;
+}
+
+ #phpbb blockquote cite cite {
+	font-size: 1em;
+}
+
+ #phpbb blockquote.uncited {
+	padding-top: 25px;
+}
+
+/* Code block */
+
+ #phpbb .codebox {
+	padding: 3px;
+	border: 1px solid transparent;
+	font-size: 1em;
+}
+
+ #phpbb .codebox p {
+	text-transform: uppercase;
+	border-bottom: 1px solid transparent;
+	margin-bottom: 3px;
+	font-size: 0.8em !important;
+	font-weight: bold;
+	display: block;
+}
+
+ #phpbb blockquote .codebox {
+	margin-left: 0;
+}
+
+ #phpbb .codebox code {
+	overflow: auto;
+	display: block;
+	height: auto;
+	max-height: 200px;
+	white-space: normal;
+	padding-top: 5px;
+	font: 0.9em Monaco, "Andale Mono","Courier New", Courier, mono;
+	line-height: 1.3em;
+	margin: 2px 0;
+}
+
+/* Attachments
+----------------------------------------*/
+
+ #phpbb .attachbox {
+	float: left;
+	width: auto;
+	max-width: 100%;
+	margin: 5px 5px 5px 0;
+	padding: 6px;
+	border: 1px dashed transparent;
+	clear: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ #phpbb .attachbox dt {
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+
+ #phpbb .attachbox dd {
+	margin-top: 4px;
+	padding-top: 4px;
+	clear: left;
+	border-top: 1px solid transparent;
+	overflow-x: auto;
+}
+
+ #phpbb .attachbox dd dd {
+	border: none;
+}
+
+ #phpbb .attachbox p {
+	line-height: 110%;
+	font-weight: normal;
+	clear: left;
+}
+
+ #phpbb .attachbox p.stats {
+	line-height: 110%;
+	font-weight: normal;
+	clear: left;
+}
+
+ #phpbb .attach-image {
+	margin: 3px 0;
+	max-width: 100%;
+}
+
+ #phpbb .attach-image img {
+	border: 1px solid transparent;
+/*	cursor: move; */
+	cursor: default;
+}
+
+/* Inline image thumbnails */
+
+ #phpbb div.inline-attachment dl.thumbnail , #phpbb div.inline-attachment dl.file {
+	display: block;
+	margin-bottom: 4px;
+}
+
+ #phpbb div.inline-attachment p {
+	font-size: 100%;
+}
+
+ #phpbb dl.file {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	display: block;
+}
+
+ #phpbb dl.file dt {
+	text-transform: none;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+ #phpbb dl.file dd {
+	margin: 0;
+	padding: 0;
+}
+
+ #phpbb dl.thumbnail img {
+	padding: 3px;
+	border: 1px solid transparent;
+	box-sizing: border-box;
+}
+
+ #phpbb dl.thumbnail dd {
+	font-style: italic;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+ #phpbb .attachbox dl.thumbnail dd {
+	font-size: 100%;
+}
+
+ #phpbb dl.thumbnail dt a:hover img {
+	border: 1px solid transparent;
+}
+
+/* Post poll styles
+----------------------------------------*/
+
+ #phpbb fieldset.polls {
+	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+}
+
+ #phpbb fieldset.polls dl {
+	margin-top: 5px;
+	border-top: 1px solid transparent;
+	padding: 5px 0 0 0;
+	line-height: 120%;
+}
+
+ #phpbb fieldset.polls dl.voted {
+	font-weight: bold;
+}
+
+ #phpbb fieldset.polls dt {
+	text-align: left;
+	float: left;
+	display: block;
+	width: 30%;
+	border-right: none;
+	padding: 0;
+	margin: 0;
+	font-size: 1.1em;
+}
+
+ #phpbb fieldset.polls dd {
+	float: left;
+	width: 10%;
+	border-left: none;
+	padding: 0 5px;
+	margin-left: 0;
+	font-size: 1.1em;
+}
+
+ #phpbb fieldset.polls dd.resultbar {
+	width: 50%;
+}
+
+ #phpbb fieldset.polls dd input {
+	margin: 2px 0;
+}
+
+ #phpbb fieldset.polls dd div {
+	text-align: right;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	padding: 2px 2px 0 2px;
+	overflow: visible;
+	min-width: 8px;
+}
+
+ #phpbb .pollbar1 , #phpbb .pollbar2 , #phpbb .pollbar3 , #phpbb .pollbar4 , #phpbb .pollbar5 {
+	border-bottom: 1px solid transparent;
+	border-right: 1px solid transparent;
+}
+
+ #phpbb .vote-submitted {
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Poster profile block
+----------------------------------------*/
+
+ #phpbb .postprofile {
+	margin: 5px 0 10px 0;
+	min-height: 80px;
+	border: 1px solid transparent;
+	border-width: 0 0 0 1px;
+	width: 22%;
+	float: right;
+	display: inline;
+}
+
+ #phpbb .postprofile dd , #phpbb .postprofile dt {
+	line-height: 1.2em;
+	margin-left: 8px;
+}
+
+ #phpbb .postprofile dd {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+ #phpbb .postprofile strong {
+	font-weight: normal;
+}
+
+ #phpbb .postprofile dt.no-profile-rank , #phpbb .postprofile dd.profile-rank , #phpbb .postprofile .search-result-date {
+	margin-bottom: 10px;
+}
+
+/* Post-profile avatars */
+
+ #phpbb .postprofile .has-avatar .avatar-container {
+	margin-bottom: 3px;
+	overflow: hidden;
+}
+
+ #phpbb .postprofile .avatar {
+	display: block;
+	float: left;
+	max-width: 100%;
+}
+
+ #phpbb .postprofile .avatar img {
+	display: block;
+	height: auto !important;
+	max-width: 100%;
+}
+
+ #phpbb .postprofile .profile-posts a {
+	font-weight: normal;
+}
+
+ #phpbb dd.profile-warnings {
+	font-weight: bold;
+}
+
+ #phpbb dd.profile-contact {
+	overflow: visible;
+}
+
+ #phpbb .profile-contact .dropdown-container {
+	display: inline-block;
+}
+
+ #phpbb .profile-contact .icon_contact {
+	vertical-align: middle;
+}
+
+ #phpbb .profile-contact .dropdown {
+	margin-right: -14px;
+}
+
+ #phpbb .online {
+	background-image: none;
+	background-position: 100% 0;
+	background-repeat: no-repeat;
+}
+
+/* Poster profile used by search*/
+
+ #phpbb .search .postprofile {
+	width: 30%;
+}
+
+/* Profile used on view-profile */
+
+ #phpbb .profile-avatar img {
+	max-width: 100%;
+}
+
+/* pm list in compose message if mass pm is enabled */
+
+ #phpbb dl.pmlist dt {
+	width: 60% !important;
+}
+
+ #phpbb dl.pmlist dt textarea {
+	width: 95%;
+}
+
+ #phpbb dl.pmlist dd {
+	margin-left: 61% !important;
+	margin-bottom: 2px;
+}
+
+ #phpbb .action-bar div.dl_links {
+	padding: 10px 0 0 10px;
+}
+
+ #phpbb div.dl_links {
+	display: inline-block;
+	text-transform: none;
+}
+
+ #phpbb .dl_links strong {
+	font-weight: bold;
+}
+
+ #phpbb .dl_links ul {
+	list-style-type: none;
+	margin: 0;
+	display: inline-block;
+}
+
+ #phpbb .dl_links li {
+	display: inline-block;
+}
+
+ #phpbb .attachment-filename {
+	width: 100%;
+}
+
+ #phpbb .ellipsis-text {
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+ #phpbb table.fixed-width-table {
+	table-layout: fixed;
+}
+
+/* Show scrollbars for items with overflow on iOS devices
+----------------------------------------*/
+
+ #phpbb .postbody .content::-webkit-scrollbar , #phpbb #topicreview::-webkit-scrollbar , #phpbb #post_details::-webkit-scrollbar , #phpbb .codebox code::-webkit-scrollbar , #phpbb .attachbox dd::-webkit-scrollbar , #phpbb .attach-image::-webkit-scrollbar , #phpbb .dropdown-extended ul::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	-webkit-appearance: none;
+	background: rgba(0, 0, 0, .1);
+	border-radius: 3px;
+}
+
+ #phpbb .postbody .content::-webkit-scrollbar-thumb , #phpbb #topicreview::-webkit-scrollbar-thumb , #phpbb #post_details::-webkit-scrollbar-thumb , #phpbb .codebox code::-webkit-scrollbar-thumb , #phpbb .attachbox dd::-webkit-scrollbar-thumb , #phpbb .attach-image::-webkit-scrollbar-thumb , #phpbb .dropdown-extended ul::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, .3);
+	border-radius: 3px;
+}
+
+ #phpbb #memberlist tr.inactive , #phpbb #team tr.inactive {
+	font-style: italic;
+}
+
+
