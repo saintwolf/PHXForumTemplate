@@ -7,7 +7,7 @@ Colours and backgrounds for common.css
 
  html #phpbb  , body #phpbb  {
 	color: #536482;
-	background-color: #F5F7FA;
+	background-color: #181717;
 }
 
  #phpbb h1 {
@@ -55,17 +55,15 @@ Colours and backgrounds for common.css
 }
 
  #phpbb .navbar {
-	background-color: #cadceb;
+	background-color: #a5a0a9;
 }
 
  #phpbb .forabg {
-	background-color: #0076b1;
-	background-image: url("./images/bg_list.gif");
+	background-color: #313032;
 }
 
  #phpbb .forumbg {
-	background-color: #12A3EB;
-	background-image: url("./images/bg_header.gif");
+	background-color: #313032;
 }
 
  #phpbb .panel {
@@ -90,15 +88,15 @@ Colours and backgrounds for common.css
 }
 
  #phpbb .bg2 {
-	background-color: #e1ebf2;
+	background-color: #a5a0a9;
 }
 
  #phpbb table.zebra-list tr:nth-child(even)td , #phpbb ul.zebra-list li:nth-child(even) {
-	background-color: #e1ebf2;
+	background-color: #a5a0a9;
 }
 
  #phpbb .bg3 {
-	background-color: #cadceb;
+	background-color: #a5a0a9;
 }
 
  #phpbb .ucprowbg {
@@ -335,12 +333,15 @@ Colours and backgrounds for content.css
 
 
  #phpbb ul.forums {
-	background-color: #eef5f9;
-	background-image: url("./images/gradient.gif");
+	background-color: #a5a0a9;
 }
 
  #phpbb ul.topiclist li {
 	color: #4C5D77;
+}
+
+#phpbb ul.topics li {
+	background-color: #a5a0a9;
 }
 
  #phpbb ul.topiclist dd {
