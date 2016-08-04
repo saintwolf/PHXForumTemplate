@@ -7,7 +7,7 @@ Colours and backgrounds for common.css
 
  html #phpbb  , body #phpbb  {
 	color: #536482;
-	background-color: #222121;
+	background-color: inherit;
 }
 
  #phpbb h1 {
